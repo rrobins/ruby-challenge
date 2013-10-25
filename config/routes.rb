@@ -1,5 +1,9 @@
 RubyChallenge::Application.routes.draw do
+  get "products/index"
+
   resources :products
+
+  root :to => 'products#index'
 
 
   # The priority is based upon order of creation:
